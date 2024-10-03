@@ -12,5 +12,9 @@
 #SBATCH --mail-user=helene.verhaeghe27+cism@gmail.com
 #SBATCH --mail-type=ALL
 
+module load Python/3.11.3-GCCcore-12.3.0
+module load virtualenv
+
+
 source venv/bin/activate
 srun python hello.py $SLURM_ARRAY_TASK_ID
