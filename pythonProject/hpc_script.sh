@@ -1,7 +1,6 @@
 #!/bin/bash
 # Submission script for Lemaitre4
 #SBATCH --job-name=test
-#SBATCH --output=log_test.txt
 #SBATCH --array=1-10
 #SBATCH --time=00:10:00 # hh:mm:ss
 #
